@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <style>
+  body {background-color:#ff9999;font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;color:white;
+      }
+a        {color:white;}
+a:hover       {color:#ff6666;}
+h1       {color:white;
+         text-align: center;
+         font-size: 24px;
+         border: 2px solid white;
+         padding:30px;
+         margin: 5px;
+}
+h2      {color:white;
+        font-size:18px;
+        font-style: oblique;
+        border: 2px solid white;
+        padding-right:30px;
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        margin: 5px;
+        text-align: center;
+      }
+h3          {color: white;
+             padding-left: 30px;
+             padding-right: 30px;
+            }
+hr              {color: white;}
+  #p2     {color:white;
+          font-size:16px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin-left: 5px;
+          margin-right: 5px;
+          text-align: left;
+  }
+  #about     {color: white;
+          margin-left: 5px;
+          margin-right: 5px;
+          padding-left: 30px;
+          padding-right: 30px;
+          text-align: left;
+  }
+#list-title {color: white;
+            list-style-type: none;
+            padding-bottom: 10px;
+          }
+#container {color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            }
+#likes    {float:left;
+           width:50%;
+          }
+#dislikes {float:left;
+           width:50%;
+}
+  #p5     {color:white;
+          font-size:16px;
+          padding-top: 30px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin: 5px;
+          text-align: left;
+}
+#p6 {color:white;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: left;}
+
+        table, th, td{
+             border: 2px solid white;
+             border-collapse: collapse;
+             padding: 15px;
+             text-align: justify;
+             vertical-align: justify;
+             color: #463939;
+           }
+           th  {
+             background-color: white
+           }
+           tr:hover {background-color: white}
+#p7         {border: 2px solid white;
+            font-size:16px;
+            padding: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;}
+  </style>
+<body>
+<h1>W E L C O M E!</h1>
+<br>
+<h2><strong>My name's Audri Saulters</strong></h2>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#site">Site</a></li>
+  <li><a href="#spotify">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<br>
+<h3>ABOUT</h3>
+<p id="about">I was born and raised in Denver and moved to
+  Seattle last Summer. This fall I will be a junior at
+  Inglemoor High School and enrolled in the IB Program
+  there. Besides Girls Who Code, I participate in
+  <u><abbr title= "Model United Nations">MUN</abbr></u> and
+  She's The First. In my free time I like to draw, play
+  guitar, piano, and ukulele, and listen to music.</p>
+
+  <h3>FUN FACT</h3>
+  <p id="p7">I have <a href="https://www.mnn.com/health/fitness-well-being/stories/what-is-synesthesia-and-whats-it-like-to-have-it">
+    synesthesia</a>; meaning I "see" sounds, numbers, and words with colors.</p>
+
+<h3>LIKES AND DISLIKES</h3>
+<div id="container">
+  <div id="likes">
+    <li id="list-title"><b><u>LIKES</b></u>
+    <li>Dogs</li>
+    <li>Art Museums</li>
+    <li>Space</li>
+    <li>Lorde</li>
+  </div>
+  <div id="dislikes">
+    <li id="list-title"><b><u>DISLIKES</b></u>
+    <li>The Patriarchy</li>
+    <li>Carbonated Water</li>
+    <li>Gender Roles</li>
+    <li>Any temperature above 85 degrees</li>
+  </div>
+</div>
+<br>
+<h3>REFLECTION</h3>
+<p id="p6">By implementing a color scheme that includes contrasting and darker
+  colors, the site itself should be more appealing to the eyes, especially to
+  any who may be visually impaired. The coding itself is still lightweight as
+  it does not involve anything necessarily complicated.<br><br>
+  As for others' sites, their design schemes were well organized and complimented
+  their color schemes. Some included pictures that matched their themes and were
+  quite creative in making a cohesive site.<br><br>
+  I've learned a lot today, from basic HTML structuring to various design
+  elements; I'm most proud of learning how to use the two together in order
+  to create a visual that meets my own standards.</p>
+<br>
+<!-- Table starts here-->
+<div style ="overflow-x:auto;">
+  <table style="width:90%; margin:1em auto">
+
+    <!-- Define the first row of the table -->
+    <tr>
+      <th>Core4 Concept</th>
+      <th>Technical Definition</th>
+      <th>Real-Life Analogy</th>
+      <th>Python Example</th>
+      <th>Scratch Example</th>
+    </tr>
+
+    <!-- Fill in the row for Variables -->
+    <tr>
+    <td><b>Variables</b></td>
+      <td>A shortcut in which a part of the code can be stored </td>
+      <td>A box that contains the code </td>
+      <td>user_input = input()</td>
+      <td>n/a</td>
+    </tr>
+
+    <!-- Fill in the row for Loops -->
+    <tr>
+      <td><b>Loops</b></td>
+      <td>The repeated action of a part of the code</td>
+      <td>If a song were on repeat, it'd be looped</td>
+      <td>for i in range(4):</td>
+      <td>n/a</td>
+    </tr>
+
+    <!-- Fill in the row for Conditionals -->
+    <tr>
+      <td><b>Conditionals</b></td>
+      <td>The manipulation of an input into an output based on certain conditions</td>
+      <td>If I'm offered an apple or an orange, the fruit I ask for is the one I'll get</td>
+      <td>if user_input == "how are you?":<br>
+            print("good!")</td>
+      <td>n/a</td>
+    </tr>
+
+    <!-- Fill in the row for Functions -->
+    <tr>
+      <td><b>Functions</b></td>
+      <td>A block of code that performs an action</td>
+      <td>A button that croaks like a frog every time you press it</td>
+      <td>def Frog_Croak():<br>
+          print("croak!!")
+          print("CROAAK!")</td>
+      <td>n/a</td>
+    </tr>
+
+  </table>
+</div>
+
+<p id="p5"><a href="http://www.lordemusic.tumblr.com">
+  Here is a blog I like</a></p>
+</body>
+</html>
