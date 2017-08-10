@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <style>
+<title>Audri Saulters</title>
+</head>
+<style>
   body {background-color:#ff9999;font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;color:white;
       }
 a        {color:white;}
-a:hover       {color:#ff6666;}
+a:hover  {color:#ff6666;}
 h1       {color:white;
          text-align: center;
          font-size: 24px;
@@ -28,7 +30,11 @@ h3          {color: white;
              padding-left: 30px;
              padding-right: 30px;
             }
-hr              {color: white;}
+hr        {color: white;}
+img       {color:white;
+           padding:30px;
+           border:none
+          }
   #p2     {color:white;
           font-size:16px;
           padding-left: 30px;
@@ -75,38 +81,68 @@ hr              {color: white;}
         margin-right: 5px;
         text-align: left;}
 
-        table, th, td{
-             border: 2px solid white;
+table, th, td{
+             border: 2px solid #ff6666;
              border-collapse: collapse;
              padding: 15px;
              text-align: justify;
              vertical-align: justify;
-             color: #463939;
+             color: white;
            }
-           th  {
-             background-color: white
+th  {
+             background-color: #ff6666
            }
-           tr:hover {background-color: white}
+tr:hover {background-color: #ff6666}
 #p7         {border: 2px solid white;
             font-size:16px;
             padding: 30px;
             margin-left: 5px;
             margin-right: 5px;
             text-align: center;}
+#p8                     {border: 2px solid white;
+                        font-size:24px;
+                        padding: 30px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        text-align: center;}
+.topnav {
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.topnav a {
+  float:left;
+  display:block;
+  color:white;
+  text-align: center;
+  padding-left:15px;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+#leftpage {width: 50%;
+           float:center;
+          }
   </style>
+
+
 <body>
-<h1>W E L C O M E!</h1>
+<h1><i>AUDRI SAULTERS</i></h1>
 <br>
-<h2><strong>My name's Audri Saulters</strong></h2>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#site">Site</a></li>
-  <li><a href="#spotify">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<h2>
+<div class="topnav">
+  <a class = "active" href="#home">Home</a>
+  <a href="#site">Site</a>
+  <a href="#spotify">Spotify</a>
+  <a href="#about">About</a>
+</div>
+</h2>
+
 
 <br>
+<div class = "container" id = "leftpage">
 <h3>ABOUT</h3>
 <p id="about">I was born and raised in Denver and moved to
   Seattle last Summer. This fall I will be a junior at
@@ -137,6 +173,7 @@ hr              {color: white;}
     <li>Any temperature above 85 degrees</li>
   </div>
 </div>
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="shibe.jpg" alt="shibe" width="80px" height="80px">
 <br>
 <h3>REFLECTION</h3>
 <p id="p6">By implementing a color scheme that includes contrasting and darker
@@ -148,7 +185,13 @@ hr              {color: white;}
   quite creative in making a cohesive site.<br><br>
   I've learned a lot today, from basic HTML structuring to various design
   elements; I'm most proud of learning how to use the two together in order
-  to create a visual that meets my own standards.</p>
+  to create a visual that meets my own standards.<br><br>
+  I've also learned a significant amount about how the internet works, and exactly
+  what it is. I had no idea there was such a thing as information packets, let alone
+  how they travel separately in order to reach the user's device most efficiently.<br><br>
+  Considering the fact that LaTeX is used for formatting, I would label it as a markup language.
+  The formatting aspect makes it similar to HTML and CSS in this way because it does not tell the
+  device what to do but rather how to display it; it's not necessarily a dynamic language.</p>
 <br>
 <!-- Table starts here-->
 <div style ="overflow-x:auto;">
@@ -204,8 +247,24 @@ hr              {color: white;}
 
   </table>
 </div>
+<br>
+<h3>Sites</h3>
+  <p id="p8"><a href="http://www.lordemusic.tumblr.com">Favorite Blog</a></p>
+  <p id="p8"><a href="https://github.com/gwcteam17/website/blob/master/website.html">Final Project Website</a></p>
+</div>
+<script>
+  window.alert("Welcome!")
 
-<p id="p5"><a href="http://www.lordemusic.tumblr.com">
-  Here is a blog I like</a></p>
+    function bigImg(x) {
+      x.style.height = "100px";
+      x.style.width = "100px";
+    }
+
+    function normalImg(x) {
+      x.style.height = "80px";
+      x.style.width = "80px";
+}
+
+</script>
 </body>
 </html>
